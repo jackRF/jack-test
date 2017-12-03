@@ -12,6 +12,7 @@ public class Node2 {
 	public static void main(String[] args) {
 		try {
 			InetAddress group=InetAddress.getByName(address);
+			@SuppressWarnings("resource")
 			MulticastSocket mss=new MulticastSocket(port);
 			mss.joinGroup(group);
 			byte[] buffer=new byte[1024];
@@ -22,10 +23,8 @@ public class Node2 {
 				System.out.println("receive from node1:"+s);
 			}
 		} catch (UnknownHostException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
