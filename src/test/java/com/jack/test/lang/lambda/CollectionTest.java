@@ -18,6 +18,8 @@ public class CollectionTest extends BaseTest {
 	public void testa() {
 //		Arrays.asList("a","b","c").forEach(e->log(e));
 //		sfs();
+		MyFunction<String> fn=e->{log(e);};
+		funca(fn, "sfs","bvnghj","gkyu");
 		funca(e->log(e), "sfs","bvnghj","gkyu");
 	}
 	
