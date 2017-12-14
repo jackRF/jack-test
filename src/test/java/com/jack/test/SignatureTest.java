@@ -42,7 +42,7 @@ public class SignatureTest extends BaseTest {
 			httpPost.setEntity(entity);
 			HttpResponse httpResponse=httpClient.execute(httpPost);
 			entity=httpResponse.getEntity();
-			System.out.println(Utils.readString(entity.getContent()));
+			System.out.println(Utils.readText(entity.getContent()));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{

@@ -1,0 +1,1159 @@
+{
+	"data": {
+		"Credit": {
+			"indicator": {
+				"cash": {
+					"total": 6,
+					"unSettledTotal": 0,
+					"guaranteeTotal": 1
+				},
+				"circle": {
+					"total": 2,
+					"unSettledTotal": 0,
+					"guaranteeTotal": 0
+				},
+				"lease": {
+					"total": 2,
+					"unSettledTotal": 0,
+					"guaranteeTotal": 0
+				},
+				"estate": {
+					"total": 2,
+					"unSettledTotal": 0,
+					"guaranteeTotal": 0
+				},
+				"car": {
+					"total": 2,
+					"unSettledTotal": 0,
+					"guaranteeTotal": 0
+				},
+				"other": {
+					"total": 2,
+					"unSettledTotal": 0,
+					"guaranteeTotal": 0
+				}
+			},
+			"overdueInfo": {
+				"badDebtNum": 0,
+				"badDebtBalance": 0,
+				"offNum": 0,
+				"offBalance": 0,
+				"agentNum": 0,
+				"agentBalance": 0,
+				"overdueNum": 1,
+				"maxOverdueTimes": 1,
+				"maxOverdueAmount": 4000
+			},
+			"debtInfo": {
+				"unSettled": {
+					"cash": {
+						"orgNum": 0,
+						"total": 0,
+						"creditLimit": 0,
+						"balance": 0
+					},
+					"circle": {
+						"orgNum": 1,
+						"total": 1,
+						"creditLimit": 200000,
+						"balance": 28000
+					},
+					"lease": {
+						"orgNum": 0,
+						"total": 0,
+						"creditLimit": 0,
+						"balance": 0
+					},
+					"estate": {
+						"orgNum": 0,
+						"total": 0,
+						"creditLimit": 0,
+						"balance": 0
+					},
+					"car": {
+						"orgNum": 0,
+						"total": 0,
+						"creditLimit": 0,
+						"balance": 0
+					},
+					"other": {
+						"orgNum": 0,
+						"total": 0,
+						"creditLimit": 0,
+						"balance": 0
+					}
+				},
+				"guarantee": {
+					"orgNum": 1,
+					"total": 1,
+					"creditLimit": 100000.67,
+					"balance": 200
+				}
+			},
+			"remoteCreditInfo": {
+				"unSettledNum": 6,
+				"unSettledBalance": 600,
+				"agentNum": 4,
+				"agentBalance": 400,
+				"guaranteeNum": 0,
+				"guaranteeBalance": 0,
+				"overdueNum": 14,
+				"maxOverdueTimes": 1,
+				"maxOverdueAmount": 100
+			},
+			"creditInfos": [{
+					"creditDetail": {
+						"creditType": "1",
+						"accountStatus": 0,
+						"guaranteeWay": 4,
+						"repayFreq": "03",
+						"orgCode": "OG00000381",
+						"dateOpened": "20120104",
+						"dateClosed": "20180702",
+						"creditLimit": 50000.66,
+						"balance": 0,
+						"loanTerm": 10,
+						"periodNumber": 9,
+						"billingDate": "20170502",
+						"scheduledAmount": 100,
+						"actualPayAmount": 100,
+						"actualPayDate": "20170502",
+						"maxOverdueTimes": 1,
+						"nowOverdueTimes": 1,
+						"nowOverdueAmount": 100,
+						"maxOverdueAmount": 100
+					},
+					"repayStatus": {
+						"start": "201505",
+						"end": "201705",
+						"M1": "#",
+						"M2": "#",
+						"M3": "#",
+						"M4": "#",
+						"M5": "#",
+						"M6": "#",
+						"M7": "#",
+						"M8": "#",
+						"M9": "#",
+						"M10": "#",
+						"M11": "#",
+						"M12": "#",
+						"M13": "#",
+						"M14": "#",
+						"M15": "#",
+						"M16": "#",
+						"M17": "#",
+						"M18": "#",
+						"M19": "#",
+						"M20": "#",
+						"M21": "#",
+						"M22": "#",
+						"M23": "#",
+						"M24": "1"
+					},
+					"overdues": [{
+							"nowOverdueTimes": 1,
+							"nowOverdueAmount": 100,
+							"billingDate": "20170502"
+						}
+					]
+				}, {
+					"creditDetail": {
+						"creditType": "Z",
+						"accountStatus": 4,
+						"guaranteeWay": 4,
+						"repayFreq": "03",
+						"orgCode": "OG00000381",
+						"dateOpened": "20120104",
+						"dateClosed": "20180702",
+						"creditLimit": 50000.66,
+						"balance": 0,
+						"loanTerm": 10,
+						"periodNumber": 9,
+						"billingDate": "20170502",
+						"scheduledAmount": 100,
+						"actualPayAmount": 100,
+						"actualPayDate": "20170502",
+						"maxOverdueTimes": 1,
+						"nowOverdueTimes": 1,
+						"nowOverdueAmount": 100,
+						"maxOverdueAmount": 100
+					},
+					"repayStatus": {
+						"start": "201505",
+						"end": "201705",
+						"M1": "#",
+						"M2": "#",
+						"M3": "#",
+						"M4": "#",
+						"M5": "#",
+						"M6": "#",
+						"M7": "#",
+						"M8": "#",
+						"M9": "#",
+						"M10": "#",
+						"M11": "#",
+						"M12": "#",
+						"M13": "#",
+						"M14": "#",
+						"M15": "#",
+						"M16": "#",
+						"M17": "#",
+						"M18": "#",
+						"M19": "#",
+						"M20": "#",
+						"M21": "#",
+						"M22": "#",
+						"M23": "#",
+						"M24": "1"
+					},
+					"overdues": [{
+							"nowOverdueTimes": 1,
+							"nowOverdueAmount": 100,
+							"billingDate": "20170502"
+						}
+					]
+				}, {
+					"creditDetail": {
+						"creditType": "2",
+						"accountStatus": 7,
+						"guaranteeWay": 4,
+						"repayFreq": "03",
+						"orgCode": "OG00000381",
+						"dateOpened": "20120104",
+						"dateClosed": "20180702",
+						"creditLimit": 50000.66,
+						"balance": 0,
+						"loanTerm": 10,
+						"periodNumber": 9,
+						"billingDate": "20170502",
+						"scheduledAmount": 100,
+						"actualPayAmount": 100,
+						"actualPayDate": "20170502",
+						"maxOverdueTimes": 1,
+						"nowOverdueTimes": 1,
+						"nowOverdueAmount": 100,
+						"maxOverdueAmount": 100
+					},
+					"repayStatus": {
+						"start": "201505",
+						"end": "201705",
+						"M1": "#",
+						"M2": "#",
+						"M3": "#",
+						"M4": "#",
+						"M5": "#",
+						"M6": "#",
+						"M7": "#",
+						"M8": "#",
+						"M9": "#",
+						"M10": "#",
+						"M11": "#",
+						"M12": "#",
+						"M13": "#",
+						"M14": "#",
+						"M15": "#",
+						"M16": "#",
+						"M17": "#",
+						"M18": "#",
+						"M19": "#",
+						"M20": "#",
+						"M21": "#",
+						"M22": "#",
+						"M23": "#",
+						"M24": "1"
+					},
+					"overdues": [{
+							"nowOverdueTimes": 1,
+							"nowOverdueAmount": 100,
+							"billingDate": "20170502"
+						}
+					]
+				}, {
+					"creditDetail": {
+						"creditType": "2",
+						"accountStatus": 3,
+						"guaranteeWay": 4,
+						"repayFreq": "03",
+						"orgCode": "OG00000381",
+						"dateOpened": "20120104",
+						"dateClosed": "20180702",
+						"creditLimit": 50000.66,
+						"balance": 0,
+						"loanTerm": 10,
+						"periodNumber": 9,
+						"billingDate": null,
+						"scheduledAmount": null,
+						"actualPayAmount": null,
+						"actualPayDate": "20170502",
+						"maxOverdueTimes": 1,
+						"nowOverdueTimes": null,
+						"nowOverdueAmount": null,
+						"maxOverdueAmount": 100
+					},
+					"repayStatus": {
+						"start": "201505",
+						"end": "201705",
+						"M1": "#",
+						"M2": "#",
+						"M3": "#",
+						"M4": "#",
+						"M5": "#",
+						"M6": "#",
+						"M7": "#",
+						"M8": "#",
+						"M9": "#",
+						"M10": "#",
+						"M11": "#",
+						"M12": "#",
+						"M13": "#",
+						"M14": "#",
+						"M15": "#",
+						"M16": "#",
+						"M17": "#",
+						"M18": "#",
+						"M19": "#",
+						"M20": "#",
+						"M21": "#",
+						"M22": "#",
+						"M23": "#",
+						"M24": "1"
+					},
+					"overdues": [{
+							"nowOverdueTimes": 1,
+							"nowOverdueAmount": 100,
+							"billingDate": "20170502"
+						}
+					]
+				}, {
+					"creditDetail": {
+						"creditType": "3",
+						"accountStatus": 1,
+						"guaranteeWay": 4,
+						"repayFreq": "03",
+						"orgCode": "OG00000381",
+						"dateOpened": "20120104",
+						"dateClosed": "20180702",
+						"creditLimit": 50000.66,
+						"balance": 0,
+						"loanTerm": 10,
+						"periodNumber": 9,
+						"billingDate": "20170502",
+						"scheduledAmount": 100,
+						"actualPayAmount": 100,
+						"actualPayDate": "20170502",
+						"maxOverdueTimes": 1,
+						"nowOverdueTimes": 1,
+						"nowOverdueAmount": 100,
+						"maxOverdueAmount": 100
+					},
+					"repayStatus": {
+						"start": "201505",
+						"end": "201705",
+						"M1": "#",
+						"M2": "#",
+						"M3": "#",
+						"M4": "#",
+						"M5": "#",
+						"M6": "#",
+						"M7": "#",
+						"M8": "#",
+						"M9": "#",
+						"M10": "#",
+						"M11": "#",
+						"M12": "#",
+						"M13": "#",
+						"M14": "#",
+						"M15": "#",
+						"M16": "#",
+						"M17": "#",
+						"M18": "#",
+						"M19": "#",
+						"M20": "#",
+						"M21": "#",
+						"M22": "#",
+						"M23": "#",
+						"M24": "1"
+					},
+					"overdues": [{
+							"nowOverdueTimes": 1,
+							"nowOverdueAmount": 100,
+							"billingDate": "20170502"
+						}
+					]
+				}, {
+					"creditDetail": {
+						"creditType": "3",
+						"accountStatus": 4,
+						"guaranteeWay": 4,
+						"repayFreq": "03",
+						"orgCode": "OG00000381",
+						"dateOpened": "20120104",
+						"dateClosed": "20180702",
+						"creditLimit": 50000.66,
+						"balance": 0,
+						"loanTerm": 10,
+						"periodNumber": 9,
+						"billingDate": "20170502",
+						"scheduledAmount": 100,
+						"actualPayAmount": 100,
+						"actualPayDate": "20170502",
+						"maxOverdueTimes": 1,
+						"nowOverdueTimes": 1,
+						"nowOverdueAmount": 100,
+						"maxOverdueAmount": 100
+					},
+					"repayStatus": {
+						"start": "201505",
+						"end": "201705",
+						"M1": "#",
+						"M2": "#",
+						"M3": "#",
+						"M4": "#",
+						"M5": "#",
+						"M6": "#",
+						"M7": "#",
+						"M8": "#",
+						"M9": "#",
+						"M10": "#",
+						"M11": "#",
+						"M12": "#",
+						"M13": "#",
+						"M14": "#",
+						"M15": "#",
+						"M16": "#",
+						"M17": "#",
+						"M18": "#",
+						"M19": "#",
+						"M20": "#",
+						"M21": "#",
+						"M22": "#",
+						"M23": "#",
+						"M24": "1"
+					},
+					"overdues": [{
+							"nowOverdueTimes": 1,
+							"nowOverdueAmount": 100,
+							"billingDate": "20170502"
+						}
+					]
+				}, {
+					"creditDetail": {
+						"creditType": "5",
+						"accountStatus": 0,
+						"guaranteeWay": 4,
+						"repayFreq": "03",
+						"orgCode": "OG00000381",
+						"dateOpened": "20120104",
+						"dateClosed": "20180702",
+						"creditLimit": 50000.66,
+						"balance": 0,
+						"loanTerm": 10,
+						"periodNumber": 9,
+						"billingDate": "20170502",
+						"scheduledAmount": 100,
+						"actualPayAmount": 100,
+						"actualPayDate": "20170502",
+						"maxOverdueTimes": 1,
+						"nowOverdueTimes": 1,
+						"nowOverdueAmount": 100,
+						"maxOverdueAmount": 100
+					},
+					"repayStatus": {
+						"start": "201505",
+						"end": "201705",
+						"M1": "#",
+						"M2": "#",
+						"M3": "#",
+						"M4": "#",
+						"M5": "#",
+						"M6": "#",
+						"M7": "#",
+						"M8": "#",
+						"M9": "#",
+						"M10": "#",
+						"M11": "#",
+						"M12": "#",
+						"M13": "#",
+						"M14": "#",
+						"M15": "#",
+						"M16": "#",
+						"M17": "#",
+						"M18": "#",
+						"M19": "#",
+						"M20": "#",
+						"M21": "#",
+						"M22": "#",
+						"M23": "#",
+						"M24": "1"
+					},
+					"overdues": [{
+							"nowOverdueTimes": 1,
+							"nowOverdueAmount": 100,
+							"billingDate": "20170502"
+						}
+					]
+				}, {
+					"creditDetail": {
+						"creditType": "5",
+						"accountStatus": 5,
+						"guaranteeWay": 4,
+						"repayFreq": "03",
+						"orgCode": "OG00000381",
+						"dateOpened": "20120104",
+						"dateClosed": "20180702",
+						"creditLimit": 50000.66,
+						"balance": 0,
+						"loanTerm": 10,
+						"periodNumber": 9,
+						"billingDate": "20170502",
+						"scheduledAmount": 100,
+						"actualPayAmount": 100,
+						"actualPayDate": "20170502",
+						"maxOverdueTimes": 1,
+						"nowOverdueTimes": 1,
+						"nowOverdueAmount": 100,
+						"maxOverdueAmount": 100
+					},
+					"repayStatus": {
+						"start": "201505",
+						"end": "201705",
+						"M1": "#",
+						"M2": "#",
+						"M3": "#",
+						"M4": "#",
+						"M5": "#",
+						"M6": "#",
+						"M7": "#",
+						"M8": "#",
+						"M9": "#",
+						"M10": "#",
+						"M11": "#",
+						"M12": "#",
+						"M13": "#",
+						"M14": "#",
+						"M15": "#",
+						"M16": "#",
+						"M17": "#",
+						"M18": "#",
+						"M19": "#",
+						"M20": "#",
+						"M21": "#",
+						"M22": "#",
+						"M23": "#",
+						"M24": "1"
+					},
+					"overdues": [{
+							"nowOverdueTimes": 1,
+							"nowOverdueAmount": 100,
+							"billingDate": "20170502"
+						}
+					]
+				}, {
+					"creditDetail": {
+						"creditType": "6",
+						"accountStatus": 0,
+						"guaranteeWay": 4,
+						"repayFreq": "03",
+						"orgCode": "OG00000381",
+						"dateOpened": "20120104",
+						"dateClosed": "20180702",
+						"creditLimit": 50000.66,
+						"balance": 0,
+						"loanTerm": 10,
+						"periodNumber": 9,
+						"billingDate": "20170502",
+						"scheduledAmount": 100,
+						"actualPayAmount": 100,
+						"actualPayDate": "20170502",
+						"maxOverdueTimes": 1,
+						"nowOverdueTimes": 1,
+						"nowOverdueAmount": 100,
+						"maxOverdueAmount": 100
+					},
+					"repayStatus": {
+						"start": "201505",
+						"end": "201705",
+						"M1": "#",
+						"M2": "#",
+						"M3": "#",
+						"M4": "#",
+						"M5": "#",
+						"M6": "#",
+						"M7": "#",
+						"M8": "#",
+						"M9": "#",
+						"M10": "#",
+						"M11": "#",
+						"M12": "#",
+						"M13": "#",
+						"M14": "#",
+						"M15": "#",
+						"M16": "#",
+						"M17": "#",
+						"M18": "#",
+						"M19": "#",
+						"M20": "#",
+						"M21": "#",
+						"M22": "#",
+						"M23": "#",
+						"M24": "1"
+					},
+					"overdues": [{
+							"nowOverdueTimes": 1,
+							"nowOverdueAmount": 100,
+							"billingDate": "20170502"
+						}
+					]
+				}, {
+					"creditDetail": {
+						"creditType": "6",
+						"accountStatus": 6,
+						"guaranteeWay": 4,
+						"repayFreq": "03",
+						"orgCode": "OG00000381",
+						"dateOpened": "20120104",
+						"dateClosed": "20180702",
+						"creditLimit": 50000.66,
+						"balance": 0,
+						"loanTerm": 10,
+						"periodNumber": 9,
+						"billingDate": "20170502",
+						"scheduledAmount": 100,
+						"actualPayAmount": 100,
+						"actualPayDate": "20170502",
+						"maxOverdueTimes": 1,
+						"nowOverdueTimes": 1,
+						"nowOverdueAmount": 100,
+						"maxOverdueAmount": 100
+					},
+					"repayStatus": {
+						"start": "201505",
+						"end": "201705",
+						"M1": "#",
+						"M2": "#",
+						"M3": "#",
+						"M4": "#",
+						"M5": "#",
+						"M6": "#",
+						"M7": "#",
+						"M8": "#",
+						"M9": "#",
+						"M10": "#",
+						"M11": "#",
+
+						"M12": "#",
+						"M13": "#",
+						"M14": "#",
+						"M15": "#",
+						"M16": "#",
+						"M17": "#",
+						"M18": "#",
+						"M19": "#",
+						"M20": "#",
+						"M21": "#",
+						"M22": "#",
+						"M23": "#",
+						"M24": "1"
+					},
+					"overdues": [{
+							"nowOverdueTimes": 1,
+							"nowOverdueAmount": 100,
+							"billingDate": "20170502"
+						}
+					]
+				}, {
+					"creditDetail": {
+						"creditType": "7",
+						"accountStatus": 7,
+						"guaranteeWay": 4,
+						"repayFreq": "03",
+						"orgCode": "OG00000381",
+						"dateOpened": "20120104",
+						"dateClosed": "20180702",
+						"creditLimit": 50000.66,
+						"balance": 0,
+						"loanTerm": 10,
+						"periodNumber": 9,
+						"billingDate": "20170502",
+						"scheduledAmount": 100,
+						"actualPayAmount": 100,
+						"actualPayDate": "20170502",
+						"maxOverdueTimes": 1,
+						"nowOverdueTimes": 1,
+						"nowOverdueAmount": 100,
+						"maxOverdueAmount": 100
+					},
+					"repayStatus": {
+						"start": "201505",
+						"end": "201705",
+						"M1": "#",
+						"M2": "#",
+						"M3": "#",
+						"M4": "#",
+						"M5": "#",
+						"M6": "#",
+						"M7": "#",
+						"M8": "#",
+						"M9": "#",
+						"M10": "#",
+						"M11": "#",
+						"M12": "#",
+						"M13": "#",
+						"M14": "#",
+						"M15": "#",
+						"M16": "#",
+						"M17": "#",
+						"M18": "#",
+						"M19": "#",
+						"M20": "#",
+						"M21": "#",
+						"M22": "#",
+						"M23": "#",
+						"M24": "1"
+					},
+					"overdues": [{
+							"nowOverdueTimes": 1,
+							"nowOverdueAmount": 100,
+							"billingDate": "20170502"
+						}
+					]
+				}, {
+					"creditDetail": {
+						"creditType": "7",
+						"accountStatus": 2,
+						"guaranteeWay": 4,
+						"repayFreq": "03",
+						"orgCode": "OG00000381",
+						"dateOpened": "20120104",
+						"dateClosed": "20180702",
+						"creditLimit": 50000.66,
+						"balance": 0,
+						"loanTerm": 10,
+						"periodNumber": 9,
+						"billingDate": null,
+						"scheduledAmount": null,
+						"actualPayAmount": null,
+						"actualPayDate": "20170502",
+						"maxOverdueTimes": 1,
+						"nowOverdueTimes": null,
+						"nowOverdueAmount": null,
+						"maxOverdueAmount": 100
+					},
+					"repayStatus": {
+						"start": "201505",
+						"end": "201705",
+						"M1": "#",
+						"M2": "#",
+						"M3": "#",
+						"M4": "#",
+						"M5": "#",
+						"M6": "#",
+						"M7": "#",
+						"M8": "#",
+						"M9": "#",
+						"M10": "#",
+						"M11": "#",
+						"M12": "#",
+						"M13": "#",
+						"M14": "#",
+						"M15": "#",
+						"M16": "#",
+						"M17": "#",
+						"M18": "#",
+						"M19": "#",
+						"M20": "#",
+						"M21": "#",
+						"M22": "#",
+						"M23": "#",
+						"M24": "1"
+					},
+					"overdues": [{
+							"nowOverdueTimes": 1,
+							"nowOverdueAmount": 100,
+							"billingDate": "20170502"
+						}
+					]
+				}, {
+					"creditDetail": {
+						"creditType": "8",
+						"accountStatus": 1,
+						"guaranteeWay": 4,
+						"repayFreq": "03",
+						"orgCode": "OG00000381",
+						"dateOpened": "20120104",
+						"dateClosed": "20180702",
+						"creditLimit": 50000.66,
+						"balance": 0,
+						"loanTerm": 10,
+						"periodNumber": 9,
+						"billingDate": "20170502",
+						"scheduledAmount": 100,
+						"actualPayAmount": 100,
+						"actualPayDate": "20170502",
+						"maxOverdueTimes": 1,
+						"nowOverdueTimes": 1,
+						"nowOverdueAmount": 100,
+						"maxOverdueAmount": 100
+					},
+					"repayStatus": {
+						"start": "201505",
+						"end": "201705",
+						"M1": "#",
+						"M2": "#",
+						"M3": "#",
+						"M4": "#",
+						"M5": "#",
+						"M6": "#",
+						"M7": "#",
+						"M8": "#",
+						"M9": "#",
+						"M10": "#",
+						"M11": "#",
+						"M12": "#",
+						"M13": "#",
+						"M14": "#",
+						"M15": "#",
+						"M16": "#",
+						"M17": "#",
+						"M18": "#",
+						"M19": "#",
+						"M20": "#",
+						"M21": "#",
+						"M22": "#",
+						"M23": "#",
+						"M24": "1"
+					},
+					"overdues": [{
+							"nowOverdueTimes": 1,
+							"nowOverdueAmount": 100,
+							"billingDate": "20170502"
+						}
+					]
+				}, {
+					"creditDetail": {
+						"creditType": "8",
+						"accountStatus": 3,
+						"guaranteeWay": 4,
+						"repayFreq": "03",
+						"orgCode": "OG00000381",
+						"dateOpened": "20120104",
+						"dateClosed": "20180702",
+						"creditLimit": 50000.66,
+						"balance": 0,
+						"loanTerm": 10,
+						"periodNumber": 9,
+						"billingDate": null,
+						"scheduledAmount": null,
+						"actualPayAmount": null,
+						"actualPayDate": "20170502",
+						"maxOverdueTimes": 1,
+						"nowOverdueTimes": null,
+						"nowOverdueAmount": null,
+						"maxOverdueAmount": 100
+					},
+					"repayStatus": {
+						"start": "201505",
+						"end": "201705",
+						"M1": "#",
+						"M2": "#",
+						"M3": "#",
+						"M4": "#",
+						"M5": "#",
+						"M6": "#",
+						"M7": "#",
+						"M8": "#",
+						"M9": "#",
+						"M10": "#",
+						"M11": "#",
+						"M12": "#",
+						"M13": "#",
+						"M14": "#",
+						"M15": "#",
+						"M16": "#",
+						"M17": "#",
+						"M18": "#",
+						"M19": "#",
+						"M20": "#",
+						"M21": "#",
+						"M22": "#",
+						"M23": "#",
+						"M24": "1"
+					},
+					"overdues": [{
+							"nowOverdueTimes": 1,
+							"nowOverdueAmount": 100,
+							"billingDate": "20170502"
+						}
+					]
+				}, {
+					"creditDetail": {
+						"creditType": "Z",
+						"accountStatus": 0,
+						"guaranteeWay": 4,
+						"repayFreq": "03",
+						"orgCode": "OG00000381",
+						"dateOpened": "20120104",
+						"dateClosed": "20180702",
+						"creditLimit": 50000.66,
+						"balance": 0,
+						"loanTerm": 10,
+						"periodNumber": 9,
+						"billingDate": "20170502",
+						"scheduledAmount": 100,
+						"actualPayAmount": 100,
+						"actualPayDate": "20170502",
+						"maxOverdueTimes": 1,
+						"nowOverdueTimes": 1,
+						"nowOverdueAmount": 100,
+						"maxOverdueAmount": 100
+					},
+					"repayStatus": {
+						"start": "201505",
+						"end": "201705",
+						"M1": "#",
+						"M2": "#",
+						"M3": "#",
+						"M4": "#",
+						"M5": "#",
+						"M6": "#",
+						"M7": "#",
+						"M8": "#",
+						"M9": "#",
+						"M10": "#",
+						"M11": "#",
+						"M12": "#",
+						"M13": "#",
+						"M14": "#",
+						"M15": "#",
+						"M16": "#",
+						"M17": "#",
+						"M18": "#",
+						"M19": "#",
+						"M20": "#",
+						"M21": "#",
+						"M22": "#",
+						"M23": "#",
+						"M24": "1"
+					},
+					"overdues": [{
+							"nowOverdueTimes": 1,
+							"nowOverdueAmount": 100,
+							"billingDate": "20170502"
+						}
+					]
+				}, {
+					"creditDetail": {
+						"creditType": "1",
+						"accountStatus": 2,
+						"guaranteeWay": 4,
+						"repayFreq": "03",
+						"orgCode": "OG00000381",
+						"dateOpened": "20120104",
+						"dateClosed": "20180702",
+						"creditLimit": 50000.66,
+						"balance": 0,
+						"loanTerm": 10,
+						"periodNumber": 8,
+						"billingDate": null,
+						"scheduledAmount": null,
+						"actualPayAmount": null,
+						"actualPayDate": "20170502",
+						"maxOverdueTimes": 1,
+						"nowOverdueTimes": null,
+						"nowOverdueAmount": null,
+						"maxOverdueAmount": 100
+					},
+					"repayStatus": {
+						"start": "201505",
+						"end": "201705",
+						"M1": "#",
+						"M2": "#",
+						"M3": "#",
+						"M4": "#",
+						"M5": "#",
+						"M6": "#",
+						"M7": "#",
+						"M8": "#",
+						"M9": "#",
+						"M10": "#",
+						"M11": "#",
+						"M12": "#",
+						"M13": "#",
+						"M14": "#",
+						"M15": "#",
+						"M16": "#",
+						"M17": "#",
+						"M18": "#",
+						"M19": "#",
+						"M20": "#",
+						"M21": "#",
+						"M22": "#",
+						"M23": "#",
+						"M24": "1"
+					},
+					"overdues": [{
+							"nowOverdueTimes": 1,
+							"nowOverdueAmount": 100,
+							"billingDate": "20170502"
+						}
+					]
+				}
+			],
+			"guaranteeInfos": [{
+					"orgCode": "OG00000381",
+					"creditLimit": 50000.66,
+					"dateOpened": "20160104",
+					"dateClosed": "20191230",
+					"occurSum": 100000.67,
+					"guaranteeType": "1",
+					"balance": 200,
+					"updateDate": "20170613"
+				}
+			]
+		},
+		"SpecTrade": {
+			"cheat": [{
+					"orgCode": "OG00000382",
+					"tradeDate": "20160804",
+					"tradeSum": 27851,
+					"details": "上海浦东新区张江高科",
+					"createTime": "20170302",
+					"dateOpened": null
+				}
+			],
+			"leases": [{
+					"orgCode": "000000001",
+					"tradeDate": "20160804",
+					"tradeSum": 27851,
+					"details": "上海浦东新区张江高科",
+					"createTime": "20170206",
+					"dateOpened": null
+				}, {
+					"orgCode": "OG00000261",
+					"tradeDate": "20160804",
+					"tradeSum": 27851,
+					"details": "上海浦东新区张江高科",
+					"createTime": "20170207",
+					"dateOpened": null
+				}
+			],
+			"other": [{
+					"orgCode": "OG00000261",
+					"tradeDate": "20180804",
+					"tradeSum": 27851,
+					"details": "上海浦东新区张江高科",
+					"createTime": "20170120",
+					"dateOpened": null
+				}
+			],
+			"over90": [{
+					"orgCode": "OG00000261",
+					"tradeDate": "20160804",
+					"tradeSum": 27851,
+					"details": "上海浦东新区张江高科",
+					"createTime": "20170222",
+					"dateOpened": null
+				}
+			],
+			"extends": [{
+					"orgCode": "OG00000261",
+					"tradeDate": "20220804",
+					"tradeSum": 27851,
+					"details": "上海浦东新区张江高科",
+					"createTime": "20170119",
+					"dateOpened": null
+				}
+			],
+			"over60": [{
+					"orgCode": "OG00000327",
+					"tradeDate": "20160804",
+					"tradeSum": 27851,
+					"details": "上海浦东新区张江高科",
+					"createTime": "20170218",
+					"dateOpened": null
+				}
+			],
+			"over30": [{
+					"orgCode": "OG00000247",
+					"tradeDate": "20160804",
+					"tradeSum": 27851,
+					"details": "上海浦东新区张江高科",
+					"createTime": "20170318",
+					"dateOpened": null
+				}
+			],
+			"overL": [{
+					"orgCode": "OG00000326",
+					"tradeDate": "20160804",
+					"tradeSum": 27851,
+					"details": "上海浦东新区张江高科",
+					"createTime": "20170318",
+					"dateOpened": null
+				}, {
+					"orgCode": "OG00000102",
+					"tradeDate": "20160804",
+					"tradeSum": 27851,
+					"details": "上海浦东新区张江高科",
+					"createTime": "20170318",
+					"dateOpened": null
+				}
+			],
+			"illegal": [{
+					"orgCode": "OG00000261",
+					"tradeDate": "20160804",
+					"tradeSum": 27851,
+					"details": "上海浦东新区张江高科",
+					"createTime": "20170222",
+					"dateOpened": null
+				}
+			],
+			"angents": [{
+					"orgCode": "OG00000261",
+					"tradeDate": "20160804",
+					"tradeSum": 27851,
+					"details": "上海浦东新区张江高科",
+					"createTime": "20170222",
+					"dateOpened": null
+				}
+			],
+			"advance": [{
+					"orgCode": "OG00000326",
+					"tradeDate": "20160804",
+					"tradeSum": 27851,
+					"details": "上海浦东新区张江高科",
+					"createTime": "20170318",
+					"dateOpened": null
+				}
+			]
+		},
+		"Person": {
+			"identification": {
+				"gender": 2,
+				"birthday": "19780604",
+				"idType": "1",
+				"idCard": "TEST0119911031990",
+				"marriage": 20,
+				"eduLevel": 20
+			},
+			"occupations": [{
+					"company": "河北省石家庄市长安区",
+					"companyAddress": "河北省石家庄市长安区",
+					"updateTime": "20161105"
+				}
+			],
+			"contactAddresses": [{
+					"contactAddress": "上海浦东新区张江高科",
+					"updateTime": "20161105"
+				}
+			],
+			"estates": [{
+					"address": "河北省石家庄市长安区",
+					"condition": "1",
+					"updateTime": "20161105"
+				}
+			]
+		}
+	},
+	"success": true
+}

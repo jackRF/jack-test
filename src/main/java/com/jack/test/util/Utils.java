@@ -1,9 +1,13 @@
 package com.jack.test.util;
 
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -12,6 +16,37 @@ import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
 public class Utils {
+	/**
+	 * 从文件读text  UTF-8
+	 * @param file
+	 * @return
+	 * @throws IOException
+	 */
+	public static String readText(File file) throws IOException{
+		return readText(file, "UTF-8");
+	}
+	/**
+	 * 从文件读text
+	 * @param file
+	 * @param charsetName 编码
+	 * @return
+	 * @throws IOException
+	 */
+	public static String readText(File file,String charsetName) throws IOException{
+		BufferedInputStream in=null;
+		try{
+			in=new BufferedInputStream(new FileInputStream(file));
+			return readText(in, charsetName);
+		}finally{
+			if(in!=null){
+				try {
+					in.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
 	public static String dataToParams(Map<String,?> data){
 		StringBuilder sb=new StringBuilder();
 		int i=0;
@@ -33,23 +68,44 @@ public class Utils {
 			params.add(pair);
 		}
 		return params;
-		
 	}
-	public static String readString(InputStream is) {
-		BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+	/**
+	 * 从输入流读text charsetName
+	 * @param is
+	 * @param charsetName
+	 * @return
+	 * @throws IOException
+	 */
+	public static String readText(InputStream is) throws IOException {
+		return readText(is,"UTF-8");
+	}
+	/**
+	 * 从输入流读text charsetName
+	 * @param is
+	 * @param charsetName
+	 * @return
+	 * @throws IOException
+	 */
+	public static String readText(InputStream is,String charsetName) throws IOException {
+		BufferedReader reader=null;
 		StringBuilder sb = new StringBuilder();
 		String line = null;
 		try {
+			reader = new BufferedReader(new InputStreamReader(is,charsetName));
 			while ((line = reader.readLine()) != null) {
-				sb.append(line + "\n");
+				sb.append(line);
+				sb.append("\n");
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
+			throw e;
 		} finally {
-			try {
-				is.close();
-			} catch (IOException e) {
-				e.printStackTrace();
+			if(reader!=null){
+				try {
+					reader.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
 			}
 		}
 		return sb.toString();
