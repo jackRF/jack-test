@@ -8,12 +8,11 @@ public class UtilsTest extends BaseTest {
 	@Test
 	public void testMaping() {
 		StringBuilder sb=new StringBuilder();
-		String[] aliases={"ID","NAME","ID_CARD"};
-		int i=0;
+		String[] aliases={"ID","NAME","ID_CARD","ADSSFS_DGGH_DDGF"};
 		for(String alias:aliases){
 			log(Utils.columnToProperty(alias, sb));
 		}
-		String[] properties={"id","name","idCard","ADSsfsDggh"};
+		String[] properties={"id","name","idCard","ADSsfsDgghDDgf"};
 		for(String property:properties){
 			log(Utils.propertyToColumn(property, sb));
 		}

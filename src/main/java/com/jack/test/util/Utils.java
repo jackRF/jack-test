@@ -7,7 +7,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -23,12 +22,10 @@ public class Utils {
 		while(i<property.length()){
 			char c=property.charAt(i++);
 			if(c>='A' && c<='Z'){
-				if(i==1){
-					startUpperCase=true;
-				}
-				if(!startUpperCase){
+				if(i>1&&!startUpperCase){
 					sb.append('_');
 				}
+				startUpperCase=true;
 			}else{
 				if(startUpperCase){
 					startUpperCase=false;
