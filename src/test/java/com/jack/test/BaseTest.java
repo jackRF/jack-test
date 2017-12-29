@@ -22,5 +22,4 @@ public abstract class BaseTest {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
 }
