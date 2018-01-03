@@ -19,7 +19,7 @@ public abstract class BaseTest {
 	public String getDescription() {
 		return description;
 	}
-	public void setDescription(String description) {
+	void setDescription(String description) {
 		this.description = description;
 	}
 }

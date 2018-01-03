@@ -11,6 +11,19 @@ import com.jack.test.util.Utils;
 
 public class UtilsTest extends BaseTest {
 	@Test
+	public void testaa12() {
+		this.setDescription("sfsf");
+		log(getDescription());
+	}
+	void setDescription(String description) {
+		log("UtilsTest.setDescription");
+	}
+	@Test
+	public void testaa11() {
+		LangTest test=new LangTest();
+		test.testb();
+	}
+	@Test
 	public void testa2() {
 		List<String> list=Collections.unmodifiableList(Arrays.asList("java.properties"));
 		List<String> li2=new ArrayList<String>();
