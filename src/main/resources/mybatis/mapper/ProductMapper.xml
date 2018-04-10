@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jack.test.repository.mybatis.ProductMapper">
+	<insert id="insert" parameterType="com.jack.test.domain.Product">
+		INSERT INTO TEST_PRODUCT (CODE, NAME,
+		PRICE,FLAG,CREATE_TIME,MODIFY_TIME
+		)values(#{code},#{name},#{price,jdbcType=DECIMAL},#{flag,jdbcType=DECIMAL}
+		, #{createTime,jdbcType=TIMESTAMP},#{modifyTime,jdbcType=TIMESTAMP})
+	</insert>
+	<update id="update" parameterType="com.jack.test.domain.Product">
+		update TEST_PRODUCT set
+		MODIFY_TIME=#{modifyTime,jdbcType=TIMESTAMP}
+		<if test="name!=null and name!=''">
+			,name=#{name}
+		</if>
+		<if test="flag!=null and flag!=''">
+			,FLAG=#{flag,jdbcType=DECIMAL}
+		</if>
+		<if test="price!=null and price!=''">
+			,PRICE=#{price,jdbcType=DECIMAL}
+		</if>
+		where id=#{id}
+	</update>
+	<sql id="Base_Column_List">
+	ID,CODE, NAME,	PRICE,FLAG,CREATE_TIME,MODIFY_TIME
+	</sql>
+	<select id="queryById" parameterType="java.lang.Long" resultType="com.jack.test.domain.Product">
+		select <include refid="Base_Column_List"/> from TEST_PRODUCT 
+		where id=#{id} 
+	</select>
+</mapper>

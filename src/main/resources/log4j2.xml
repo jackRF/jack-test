@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="error" monitorInterval="300">
+    <properties>
+        <property name="FILE_NAME">dms-api</property>
+        <property name="PATTERN">[%X{id}]%-d{yyyy-MM-dd HH:mm:ss}[%p][%X{clazz}][%C.%M()]:%n%m%n</property>
+    </properties>
+    <Appenders>
+        <!-- INFO -->
+        <RollingFile name="RollingFileInfo" fileName="${sys:DMS_LOG_PATH}/${FILE_NAME}-info.log" filePattern="${sys:DMS_LOG_PATH}/$${date:yyyy-MM}/${FILE_NAME}-info.%d{yyyy-MM-dd}_%i.log">
+            <!--控制台只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch）-->
+            <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${PATTERN}" />
+            <!-- 设置策略 -->
+            <Policies>
+                <!-- 每天生成一个日志文件 -->
+                <TimeBasedTriggeringPolicy interval="24" modulate="true" />
+                <!-- 每到10M生成一个日志文件 -->
+                <SizeBasedTriggeringPolicy size="${sys:DMS_LOG_SIZE} MB" />
+                <!-- DefaultRolloverStrategy属性如不设置，则默认为最多同一文件夹下7个文件，这里设置了50 -->
+                <DefaultRolloverStrategy max="50"/>
+            </Policies>
+        </RollingFile>
+        <!-- WARN -->
+        <RollingFile name="RollingFileWarn" fileName="${sys:DMS_LOG_PATH}/${FILE_NAME}-warn.log" filePattern="${sys:DMS_LOG_PATH}/$${date:yyyy-MM}/${FILE_NAME}.%d{yyyy-MM-dd}-warn_%i.log">
+            <ThresholdFilter level="warn" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${PATTERN}" />
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="24" modulate="true" />
+                <SizeBasedTriggeringPolicy size="${sys:DMS_LOG_SIZE} MB" />
+            </Policies>
+        </RollingFile>
+        <!-- ERROR -->
+        <RollingFile name="RollingFileError" fileName="${sys:DMS_LOG_PATH}/${FILE_NAME}-error.log" filePattern="${sys:DMS_LOG_PATH}/$${date:yyyy-MM}/${FILE_NAME}-error.%d{yyyy-MM-dd}_%i.log">
+            <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${PATTERN}" />
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="24" modulate="true" />
+                <SizeBasedTriggeringPolicy size="${sys:DMS_LOG_SIZE} MB" />
+            </Policies>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <logger name="com.ymkj" level="info" additivity="false">
+            <appender-ref ref="RollingFileInfo"/>
+        </logger>
+        <root level="warn">
+            <appender-ref ref="RollingFileInfo"/>
+            <appender-ref ref="RollingFileWarn"/>
+            <appender-ref ref="RollingFileError"/>
+        </root>
+    </Loggers>
+</Configuration>

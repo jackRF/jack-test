@@ -3,10 +3,21 @@ package com.jack.test;
 import org.junit.Test;
 
 import com.jack.test.util.ZipUtils;
+import com.sun.org.apache.xerces.internal.utils.ObjectFactory;
 
 //import com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl;
 
 public class ClassLoadTest extends BaseTest {
+	@Test
+	public void testa1() {
+		 ClassLoader current = ObjectFactory.class.getClassLoader();
+		log(current);
+		ClassLoader cl=Thread.currentThread().getContextClassLoader();
+		log(cl);
+		log(ClassLoader.getSystemClassLoader());
+//		Thread.currentThread().setContextClassLoader(null);
+		log(com.sun.org.apache.xerces.internal.utils.ObjectFactory.findClassLoader());
+	}
 	@Test
 	public void testa() {
 //		SAXParserFactoryImpl test=new SAXParserFactoryImpl();

@@ -6,6 +6,10 @@ import org.junit.Test;
 
 public class LangTest extends BaseTest {
 	@Test
+	public void testc2(){
+		
+	}
+	@Test
 	public void testc1(){
 		InputStream inputStream=Object.class.getResourceAsStream("/java/lang/Number.class");
 		log(inputStream==null);
