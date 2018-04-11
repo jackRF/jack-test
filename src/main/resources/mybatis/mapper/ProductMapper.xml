@@ -26,6 +26,14 @@
 	</sql>
 	<select id="queryById" parameterType="java.lang.Long" resultType="com.jack.test.domain.Product">
 		select <include refid="Base_Column_List"/> from TEST_PRODUCT 
-		where id=#{id} 
+		where id=#{id}
 	</select>
+	<select id="queryByCode" parameterType="java.lang.Long" resultType="com.jack.test.domain.Product">
+		select <include refid="Base_Column_List"/> from TEST_PRODUCT 
+		where code in 
+		<foreach collection="codes" item="code" separator="," open="(" close=")">
+		   #{code}
+		</foreach>
+	</select>
+	
 </mapper>
