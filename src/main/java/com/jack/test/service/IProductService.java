@@ -13,4 +13,8 @@ public interface IProductService {
 	Product queryById(Long id);
 
 	List<Product> queryByCode(String...codes);
+
+	int updateFlag(Product product, long flag);
+
+	int forceInsert(Product product);
 }

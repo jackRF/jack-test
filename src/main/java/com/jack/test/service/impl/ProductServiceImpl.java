@@ -2,9 +2,9 @@ package com.jack.test.service.impl;
 
 import java.util.List;
 
-import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.jack.test.domain.Product;
@@ -17,8 +17,7 @@ public class ProductServiceImpl implements IProductService {
 	@Transactional
 	@Override
 	public int insert(Product product) {
-		 productMapper.insert(product);
-		throw new RuntimeException("测试事务");
+		 return productMapper.insert(product);
 	}
 	@Transactional
 	@Override
@@ -32,5 +31,16 @@ public class ProductServiceImpl implements IProductService {
 	@Override
 	public List<Product> queryByCode(String...codes){
 		return productMapper.queryByCode(codes);
+	}
+	@Transactional(propagation=Propagation.REQUIRES_NEW)
+	@Override
+	public int forceInsert(Product product) {
+		 return productMapper.insert(product);
+	}
+	@Override
+	@Transactional(propagation=Propagation.REQUIRES_NEW)
+	public int updateFlag(Product product,long flag) {
+		product.setFlag(flag);
+		return productMapper.update(product);
 	}
 }

@@ -6,16 +6,12 @@ import java.util.List;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 
 import com.alibaba.fastjson.JSON;
 import com.jack.test.domain.Product;
-import com.jack.test.repository.mybatis.ProductMapper;
 import com.jack.test.service.IProductService;
 import com.jack.test.service.impl.ProductServiceImpl;
-@ContextConfiguration(locations={"classpath:spring/spring-*.xml"})
-public class ProductServiceTest  extends AbstractJUnit4SpringContextTests{
+public class ProductServiceTest  extends AbstractSpringTest{
 	@Autowired
 	private IProductService productService;
 	@Test
@@ -31,6 +27,14 @@ public class ProductServiceTest  extends AbstractJUnit4SpringContextTests{
 		productService.insert(product);		
 	}
 	@Test
+	public void testUpdate() {
+		Product product=productService.queryById(1l);
+		product.setPrice(BigDecimal.valueOf(8199));
+		product.setModifyTime(new Date());
+		productService.update(product);
+		
+	}
+	@Test
 	public void testQuery() {
 		Product product=productService.queryById(1l);
 		log(JSON.toJSONString(product));
@@ -40,7 +44,5 @@ public class ProductServiceTest  extends AbstractJUnit4SpringContextTests{
 		List<Product> products=productService.queryByCode("0001","0002","0003");
 		log(JSON.toJSONString(products));
 	}
-	private void log(Object msg){
-		System.out.println(msg);
-	}
+	
 }

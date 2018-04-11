@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.jack.test.repository.mybatis.ProductMapper">
+	<resultMap type="com.jack.test.domain.Product" id="productMap">
+		<result column="CREATE_TIME" property="createTime" jdbcType="TIMESTAMP"/>
+		<result column="MODIFY_TIME" property="modifyTime" jdbcType="TIMESTAMP"/>
+	</resultMap>
+	<sql id="Base_Column_List">
+	ID,CODE, NAME,	PRICE,FLAG,CREATE_TIME,MODIFY_TIME
+	</sql>
 	<insert id="insert" parameterType="com.jack.test.domain.Product">
 		INSERT INTO TEST_PRODUCT (CODE, NAME,
 		PRICE,FLAG,CREATE_TIME,MODIFY_TIME
@@ -21,14 +28,11 @@
 		</if>
 		where id=#{id}
 	</update>
-	<sql id="Base_Column_List">
-	ID,CODE, NAME,	PRICE,FLAG,CREATE_TIME,MODIFY_TIME
-	</sql>
-	<select id="queryById" parameterType="java.lang.Long" resultType="com.jack.test.domain.Product">
+	<select id="queryById" parameterType="java.lang.Long" resultMap="productMap">
 		select <include refid="Base_Column_List"/> from TEST_PRODUCT 
 		where id=#{id}
 	</select>
-	<select id="queryByCode" parameterType="java.lang.Long" resultType="com.jack.test.domain.Product">
+	<select id="queryByCode" parameterType="java.lang.Long" resultMap="productMap">
 		select <include refid="Base_Column_List"/> from TEST_PRODUCT 
 		where code in 
 		<foreach collection="codes" item="code" separator="," open="(" close=")">
