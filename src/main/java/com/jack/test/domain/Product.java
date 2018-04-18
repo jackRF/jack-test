@@ -3,26 +3,42 @@ package com.jack.test.domain;
 import java.math.BigDecimal;
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Table(name="test_product")
+@Entity
 public class Product {
+	@Id
+	@Column
 	private Long id;
 	/**
 	 * 产品编码
 	 */
+	@Column
 	private String code;
 	/**
 	 * 产品名称
 	 */
+	@Column
 	private String name;
 	/**
 	 * 价格
 	 */
+	@Column
 	private BigDecimal price;
 	/**
 	 * 标记
 	 */
+	@Column
 	private Long flag;
+	@Column
 	private Date createTime;
+	@Column
 	private Date modifyTime;
+	
 	public Long getId() {
 		return id;
 	}

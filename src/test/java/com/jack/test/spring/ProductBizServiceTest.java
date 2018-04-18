@@ -36,4 +36,8 @@ public class ProductBizServiceTest extends AbstractSpringTest{
 		product.setPrice(BigDecimal.valueOf(8299));
 		productBizService.processProduct3(product);
 	}
+	@Test
+	public void testProcessProduct4() {
+		productBizService.processProduct4(1l);
+	}
 }

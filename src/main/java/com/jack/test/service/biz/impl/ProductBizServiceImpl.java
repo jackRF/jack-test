@@ -1,5 +1,8 @@
 package com.jack.test.service.biz.impl;
 
+import java.math.BigDecimal;
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -34,5 +37,15 @@ public class ProductBizServiceImpl implements IProductBizService{
 		product.setCode("0020");
 		productService.insert(product);
 		throw new RuntimeException("测试事务");
+	}
+	@Transactional
+	@Override
+	public void processProduct4(Long id) {
+		Product product=productService.queryById(id);
+		product.setModifyTime(new Date());
+		productService.updateFlag(product, 9);
+		System.out.println("end updateFlag");
+		product.setPrice(product.getPrice().add(BigDecimal.valueOf(200)));
+		productService.update(product);
 	}
 }

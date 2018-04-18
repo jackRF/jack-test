@@ -7,10 +7,10 @@
    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd
    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 	<tx:annotation-driven transaction-manager="transactionManager" />
-	<bean id="transactionManager"
+	<!-- <bean id="transactionManager"
 		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
 		<property name="dataSource" ref="dataSource" />
-	</bean>
+	</bean> -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="com.jack.test.repository.mybatis" />
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
@@ -24,6 +24,33 @@
 			</list>
 		</property>
 	</bean>
+	<bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="hibernateProperties" >
+            <props>
+                <prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+                <prop key="hibernate.format_sql">${hibernate.format_sql} </prop>  
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+                
+                <!-- 
+                                                    它包含4个属性: 
+                * create : 会根据你的model类来生成表,但是每次运行都会删除上一次的表,重新生成表,哪怕2次没有任何改变 
+                * create-drop : 根据model类生成表,但是sessionFactory一关闭,表就自动删除 
+                * update : 最常用的属性，也根据model类生成表,即使表结构改变了,表中的行仍然存在,不会删除以前的行 
+                * validate : 只会和数据库中的表进行比较,不会创建新表,但是会插入新值 
+                 -->
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+            </props>
+        </property>
+         <property name="packagesToScan">
+            <list>
+                <value>com.jack.test.domain</value>
+            </list>
+        </property>
+    </bean> 
 	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
 		init-method="init" destroy-method="close">
 		<property name="url" value="${jdbc.url}" />

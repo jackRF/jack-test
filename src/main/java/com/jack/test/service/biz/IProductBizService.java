@@ -8,4 +8,6 @@ public interface IProductBizService {
 	void processProduct2(Product product);
 
 	void processProduct3(Product product);
+
+	void processProduct4(Long id);
 }
