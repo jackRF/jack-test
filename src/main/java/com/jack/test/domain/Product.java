@@ -34,9 +34,9 @@ public class Product {
 	 */
 	@Column
 	private Long flag;
-	@Column
+	@Column(name="CREATE_TIME")
 	private Date createTime;
-	@Column
+	@Column(name="MODIFY_TIME")
 	private Date modifyTime;
 	
 	public Long getId() {
