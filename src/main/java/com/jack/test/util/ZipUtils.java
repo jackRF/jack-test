@@ -31,7 +31,7 @@ public class ZipUtils {
 		while (entries.hasMoreElements()) {
 			ZipEntry entry = entries.nextElement();
 			String name = entry.getName();
-			int lastIndex=Integer.max( name.lastIndexOf("/"), name.lastIndexOf(File.separator));
+			int lastIndex=Utils.max( name.lastIndexOf("/"), name.lastIndexOf(File.separator));
 			if (lastIndex > -1) {
 				File fileDir = new File(extractDir,
 						name.substring(0, lastIndex));

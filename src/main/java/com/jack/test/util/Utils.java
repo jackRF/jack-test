@@ -15,6 +15,9 @@ import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
 public class Utils {
+	public static int max(int a,int b) {
+		return a>=b?a:b;
+	}
 	public static String propertyToColumn(String property,StringBuilder sb){
 		sb.setLength(0);
 		int i=0;
