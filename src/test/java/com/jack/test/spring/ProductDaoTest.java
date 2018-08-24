@@ -15,7 +15,7 @@ public class ProductDaoTest extends AbstractSpringTest {
 	private IProductDao productDao;
 	@Test
 	public void testb() {
-		List<Product> products=productDao.queryByPrice(BigDecimal.valueOf(8000), BigDecimal.valueOf(9000));
+		List<Product> products=productDao.queryByPrice(BigDecimal.valueOf(80000), BigDecimal.valueOf(90000));
 		log(JSON.toJSONString(products));
 	}
 	@Test

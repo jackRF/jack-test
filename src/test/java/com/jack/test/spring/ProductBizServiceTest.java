@@ -16,6 +16,10 @@ public class ProductBizServiceTest extends AbstractSpringTest{
 	@Autowired
 	private IProductBizService productBizService;
 	@Test
+	public void testAdditionRecords() {
+		log(productMapper.additionRecords(1423573l));
+	}
+	@Test
 	public void testProcessProduct() {
 		Product product=productMapper.queryById(1l);
 		product.setModifyTime(new Date());

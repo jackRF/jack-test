@@ -8,6 +8,10 @@
 	<sql id="Base_Column_List">
 	ID,CODE, NAME,	PRICE,FLAG,CREATE_TIME,MODIFY_TIME
 	</sql>
+	<select id="additionRecords" parameterType="java.lang.Long" resultType="java.util.Map">
+		 select BP.cellphone,		  BP.cellphone_sec
+		 from BMS_APP_PERSON_INFO BP where ID=#{id}
+	</select>
 	<insert id="insert" parameterType="com.jack.test.domain.Product">
 		INSERT INTO TEST_PRODUCT (CODE, NAME,
 		PRICE,FLAG,CREATE_TIME,MODIFY_TIME

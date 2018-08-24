@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 import org.junit.Test;
 
@@ -13,6 +14,10 @@ public class MyTest extends BaseTest {
 	}
 	{
 		System.out.println("constructor...");
+	}
+	@Test
+	public  void  testb1(){
+		log(TimeUnit.SECONDS.toNanos(1));
 	}
 	@Test
 	public  void testa(){
